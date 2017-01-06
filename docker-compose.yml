@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  iperf:
+    build: .
+    image: andiwand/iperf
+    container_name: iperf
+    restart: always
+    ports:
+      - "5001:5001"
