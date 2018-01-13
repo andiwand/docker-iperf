@@ -5,6 +5,7 @@ services:
     build: .
     image: andiwand/iperf
     container_name: iperf
-    restart: always
+    restart: unless-stopped
+    user: "1000"
     ports:
       - "5001:5001"
