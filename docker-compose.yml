@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 
 services:
   iperf:
@@ -6,6 +6,7 @@ services:
     image: andiwand/iperf
     container_name: iperf
     restart: unless-stopped
-    user: "1000"
+    user: "1000:1000"
     ports:
       - "5001:5001"
+
