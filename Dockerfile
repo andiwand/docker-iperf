@@ -6,7 +6,7 @@ RUN apt-get update \
 	&& apt-get clean -y \
 	&& rm -rf "/var/lib/apt/lists/*"
 
-ENTRYPOINT iperf
+ENTRYPOINT [ "iperf" ]
 
-CMD -s
+CMD [ "-s" ]
 
